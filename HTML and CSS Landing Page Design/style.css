@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    outline: none;
+    border: none;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: "Open Sans", sans-serif;
+}
+
+/* header section code start */
+header{
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("image/back-image.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 10px 10%;
+  overflow: hidden;
+  position: relative;
+}
+
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.logo{
+  width: 140px;
+}
+
+nav ul{
+  display: flex;
+}
+
+nav ul li{
+  list-style-type: none;
+  margin: 10px 15px;
+}
+
+nav ul li a{
+  text-decoration: none;
+  color: #333;
+  font-weight: 400;
+}
+
+.login-btn{
+  text-decoration: none;
+  color: #333;
+  margin-right: 15px;
+  font-weight: 400;
+}
+
+.app-btn{
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  background-image: linear-gradient(45deg, #df4881, #c430d7);
+  padding: 14px 40px;
+  font-size: 14px;
+  border-radius: 30px;
+  border-top-right-radius: 0;
+  cursor: pointer;
+  transition: 0.5s;
+}
+/* hero-area code start */
+.hero-container{
+   max-width: 600px;
+   margin-top: 10%;
+}
+
+.hero-container h1{
+  font-size: 60px;
+  color: #222;
+}
+
+.hero-container p{
+  margin: 10px 0 30px;
+  color: #333;
+  animation-delay: 0.5s;
+}
+
+.app-btn{
+  font-size: 16px;
+  padding: 15px 80px;
+  cursor: pointer;
+  transition: 0.5s;
+  animation-delay: 1s;
+}
+
+.app-btn:hover{
+  border-bottom-right-radius: 30px;
+}
+
+.hero-images{
+  position: absolute;
+  width: 570px;
+  bottom: 0;
+  right: 10%;
+}
+
+.hero-images.anim{
+    animation-delay: 1.5s;
+}
+
+.anim{
+  opacity: 0;
+  transform: translateY(30px);
+  animation: move-up 0.5s linear forwards;
+}
+
+@keyframes move-up{
+  100%{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+/* header section code end */
